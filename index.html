@@ -117,48 +117,204 @@
 <section id="noticias" class="max-w-6xl mx-auto px-4 pb-16">
   <h2 class="font-display text-4xl text-white mb-8 tracking-wide">ÚLTIMAS FILTRACIONES</h2>
 
-  <div class="grid md:grid-cols-3 gap-6">
+  <!-- ===== PLANTILLA DE ARTÍCULO NUEVO =====
+       Para añadir una noticia nueva en el futuro, copia UNO de los bloques <details class="article">...</details>
+       de más abajo, pégalo justo despues de esta plantilla (o donde quieras dentro del <div id="lista-articulos">),
+       y cambia: la categoría, la fecha, el título, el extracto (resumen) y los párrafos del cuerpo.
+       No toques las clases de Tailwind, solo el texto.
+  ===== -->
 
-    <!-- ===== PLANTILLA DE ARTÍCULO (duplica este bloque <article>...</article> para cada noticia nueva) ===== -->
-    <article class="card-hover bg-night2 rounded-xl overflow-hidden border-glow">
-      <div class="h-40 bg-gradient-to-br from-neon-purple/30 to-night3 flex items-center justify-center">
-        <span class="font-mono2 text-xs text-slate-500">[ IMAGEN DEL ARTÍCULO ]</span>
-      </div>
-      <div class="p-5">
-        <p class="font-mono2 text-[11px] text-neon-cyan uppercase tracking-widest mb-2">20 Ago 2026 · Rumor</p>
-        <h3 class="font-display text-2xl text-white mb-2 leading-tight">Título de tu artículo aquí</h3>
-        <p class="text-sm text-slate-400 leading-relaxed">
-          Aquí va el resumen o el inicio del artículo que yo te redacte (150-200 caracteres a modo de adelanto).
-        </p>
-      </div>
-    </article>
-    <!-- ===== FIN PLANTILLA — copia el bloque de arriba tantas veces como artículos tengas ===== -->
+  <div id="lista-articulos" class="space-y-4">
 
-    <article class="card-hover bg-night2 rounded-xl overflow-hidden border-glow">
-      <div class="h-40 bg-gradient-to-br from-neon-pink/30 to-night3 flex items-center justify-center">
-        <span class="font-mono2 text-xs text-slate-500">[ IMAGEN DEL ARTÍCULO ]</span>
+    <details class="article group bg-night2 rounded-xl border-glow overflow-hidden" open>
+      <summary class="list-none cursor-pointer p-5 flex items-start justify-between gap-4">
+        <div>
+          <p class="font-mono2 text-[11px] text-neon-cyan uppercase tracking-widest mb-2">20 Ago 2026 · Filtración</p>
+          <h3 class="font-display text-2xl md:text-3xl text-white mb-2 leading-tight">Cyberleek revela nuevas imágenes del mapa completo de Leonida</h3>
+          <p class="text-sm text-slate-400 leading-relaxed group-open:hidden">
+            El colectivo Cyberleek publica en Telegram y X capturas que, según aseguran, muestran el mapa completo del estado de Leonida.
+          </p>
+        </div>
+        <span class="font-mono2 text-neon-pink text-xl mt-1 shrink-0 transition-transform group-open:rotate-45">＋</span>
+      </summary>
+      <div class="px-5 pb-6 text-slate-300 text-sm leading-relaxed space-y-4 border-t border-white/5 pt-4">
+        <p>La comunidad de GTA 6 ha vuelto a estallar en las últimas horas después de que el colectivo autodenominado Cyberleek publicara en Telegram y X (antes Twitter) una serie de capturas que, según aseguran, corresponden al mapa completo del estado ficticio de Leonida. Las imágenes, que se han viralizado a una velocidad vertiginosa en foros como r/GTA6 de Reddit, muestran una extensión de terreno mucho mayor de lo que los fans imaginaban, con zonas rurales, pantanos y varias islas que rodean la ya icónica Vice City.</p>
+        <p>Lo llamativo de esta filtración es que, a diferencia de otras anteriores, no se trata únicamente de clips de vídeo, sino de lo que parecen ser capturas del propio motor de desarrollo interno de Rockstar Games. Usuarios de Reddit han empezado a comparar estas imágenes con los tráilers oficiales publicados hasta la fecha, encontrando coincidencias en la disposición de la costa y en algunos edificios emblemáticos del centro urbano, lo que ha alimentado la teoría de que el material podría ser auténtico, aunque perteneciente a una build antigua del juego.</p>
+        <p>Como suele ocurrir con este tipo de filtraciones masivas, no ha tardado en aparecer la controversia: varios analistas de la comunidad han señalado que parte del material circulando podría estar generado o retocado con inteligencia artificial, lo que complica aún más la tarea de separar lo real de lo falso. Rockstar Games, por su parte, mantiene su política habitual de silencio y no ha emitido comentarios oficiales, aunque se han detectado numerosas solicitudes de retirada de contenido por derechos de autor sobre las cuentas que difunden el material.</p>
+        <p>Con el evento "Grand Theft Auto VI: An Extended Look" programado para el 27 de agosto en Netflix, todo apunta a que esta filtración podría ser solo el aperitivo de una avalancha de información no oficial que llegará en los próximos días. Mientras tanto, los fans siguen destripando cada píxel de las imágenes en busca de pistas sobre la verdadera escala del mapa más ambicioso de la saga.</p>
       </div>
-      <div class="p-5">
-        <p class="font-mono2 text-[11px] text-neon-cyan uppercase tracking-widest mb-2">-- Fecha --</p>
-        <h3 class="font-display text-2xl text-white mb-2 leading-tight">Segundo artículo de ejemplo</h3>
-        <p class="text-sm text-slate-400 leading-relaxed">
-          Este es un segundo hueco de ejemplo para que veas cómo se ve la web con varias noticias.
-        </p>
-      </div>
-    </article>
+    </details>
 
-    <article class="card-hover bg-night2 rounded-xl overflow-hidden border-glow">
-      <div class="h-40 bg-gradient-to-br from-neon-orange/30 to-night3 flex items-center justify-center">
-        <span class="font-mono2 text-xs text-slate-500">[ IMAGEN DEL ARTÍCULO ]</span>
+    <details class="article group bg-night2 rounded-xl border-glow overflow-hidden">
+      <summary class="list-none cursor-pointer p-5 flex items-start justify-between gap-4">
+        <div>
+          <p class="font-mono2 text-[11px] text-neon-cyan uppercase tracking-widest mb-2">20 Ago 2026 · Lanzamiento</p>
+          <h3 class="font-display text-2xl md:text-3xl text-white mb-2 leading-tight">¿Se mantiene el 19 de noviembre de 2026 tras la filtración masiva?</h3>
+          <p class="text-sm text-slate-400 leading-relaxed group-open:hidden">
+            Todo lo que se sabe sobre la fecha de lanzamiento de GTA 6 después del último leak de gameplay.
+          </p>
+        </div>
+        <span class="font-mono2 text-neon-pink text-xl mt-1 shrink-0 transition-transform group-open:rotate-45">＋</span>
+      </summary>
+      <div class="px-5 pb-6 text-slate-300 text-sm leading-relaxed space-y-4 border-t border-white/5 pt-4">
+        <p>La fecha de lanzamiento GTA 6 vuelve a ser tema de conversación obligada en redes sociales después de que la reciente filtración de gameplay atribuida a Cyberleek reavivara el debate sobre si Rockstar Games podría verse obligada a modificar sus planes. Según la información disponible hasta el momento, el título continúa apuntando a un estreno el 19 de noviembre de 2026 para PlayStation 5 y Xbox Series X|S, una fecha que la propia compañía ha reiterado pese a la presión mediática generada por las últimas filtraciones.</p>
+        <p>El interés por la fecha de lanzamiento se ha disparado especialmente entre los usuarios de Reddit, donde se han creado auténticos hilos de seguimiento diario contando las semanas que faltan para el estreno. A esto se suma un dato que ha sorprendido incluso a los analistas del sector: firmas especializadas en seguimiento de mercado estiman que ya se habrían acumulado varios millones de reservas anticipadas del juego, una cifra descomunal si se tiene en cuenta que todavía faltan meses para su salida oficial.</p>
+        <p>La comunidad especula con que la filtración reciente, lejos de perjudicar a Rockstar, podría haber acelerado el calendario de comunicación de la compañía, adelantando detalles que originalmente se iban a reservar para más adelante. De hecho, el estudio ha confirmado que el 27 de agosto se emitirá un adelanto extendido a través de Netflix, seis horas antes de su publicación en YouTube, una estrategia de distribución que muchos fans interpretan como un intento de recuperar el control de la narrativa tras el escándalo del leak.</p>
+        <p>Pese a todo, conviene recordar que Rockstar ya retrasó en el pasado otras entregas de la saga para pulir detalles técnicos, por lo que ninguna fecha puede darse por completamente cerrada hasta el anuncio definitivo. De momento, el 19 de noviembre sigue siendo la cifra que todo fan de GTA 6 tiene marcada en rojo en el calendario.</p>
       </div>
-      <div class="p-5">
-        <p class="font-mono2 text-[11px] text-neon-cyan uppercase tracking-widest mb-2">-- Fecha --</p>
-        <h3 class="font-display text-2xl text-white mb-2 leading-tight">Tercer artículo de ejemplo</h3>
-        <p class="text-sm text-slate-400 leading-relaxed">
-          Cuando tengas contenido real, borra estos tres artículos de ejemplo y pon los tuyos.
-        </p>
+    </details>
+
+    <details class="article group bg-night2 rounded-xl border-glow overflow-hidden">
+      <summary class="list-none cursor-pointer p-5 flex items-start justify-between gap-4">
+        <div>
+          <p class="font-mono2 text-[11px] text-neon-cyan uppercase tracking-widest mb-2">20 Ago 2026 · Mapa</p>
+          <h3 class="font-display text-2xl md:text-3xl text-white mb-2 leading-tight">Vice City sería solo una pequeña parte del gigantesco mapa de Leonida</h3>
+          <p class="text-sm text-slate-400 leading-relaxed group-open:hidden">
+            Los archivos filtrados sugieren un mapa inspirado en Florida mucho más grande de lo esperado.
+          </p>
+        </div>
+        <span class="font-mono2 text-neon-pink text-xl mt-1 shrink-0 transition-transform group-open:rotate-45">＋</span>
+      </summary>
+      <div class="px-5 pb-6 text-slate-300 text-sm leading-relaxed space-y-4 border-t border-white/5 pt-4">
+        <p>Uno de los aspectos que más está dando de qué hablar tras la última filtración es el tamaño real del mapa de GTA 6. Según los archivos y capturas que circulan desde hace días en Reddit y X, Vice City —el corazón urbano que todos asociábamos como el escenario principal del juego— sería en realidad solo una fracción del inmenso estado ficticio de Leonida, inspirado libremente en Florida.</p>
+        <p>Los usuarios que han analizado el supuesto mapa filtrado aseguran haber identificado zonas pantanosas de estilo Everglades, pequeñas localidades costeras, carreteras secundarias que atraviesan bosques densos y hasta un aeropuerto internacional alejado del núcleo urbano. Esta escala recuerda a la ambición que Rockstar ya demostró con Red Dead Redemption 2, y refuerza la teoría de que GTA 6 podría convertirse en el mundo abierto más grande jamás creado por el estudio.</p>
+        <p>En los hilos de Reddit dedicados al análisis de estas imágenes, algunos usuarios han llegado a superponer el supuesto contorno del mapa filtrado sobre representaciones previas basadas en los tráilers oficiales, encontrando una notable coherencia en la forma de la costa y en la ubicación de determinados puntos de interés. Esto ha llevado a parte de la comunidad a dar cierta credibilidad al material, aunque desde medios especializados se insiste en la cautela: no existe confirmación oficial y una parte del contenido que circula podría haber sido manipulado o directamente generado con herramientas de inteligencia artificial.</p>
+        <p>Lo que sí parece fuera de toda duda es que las físicas del agua y los efectos climáticos jugarán un papel central en un mapa con tanta costa y tantos pantanos, algo que ya se intuía en los tráilers oficiales y que la propia filtración parece confirmar con nuevas secuencias de inundaciones dinámicas y corrientes marinas. Habrá que esperar al evento del 27 de agosto en Netflix para comprobar cuánto de todo esto se ajusta a la realidad.</p>
       </div>
-    </article>
+    </details>
+
+    <details class="article group bg-night2 rounded-xl border-glow overflow-hidden">
+      <summary class="list-none cursor-pointer p-5 flex items-start justify-between gap-4">
+        <div>
+          <p class="font-mono2 text-[11px] text-neon-cyan uppercase tracking-widest mb-2">20 Ago 2026 · Personajes</p>
+          <h3 class="font-display text-2xl md:text-3xl text-white mb-2 leading-tight">Así aparecen Jason y Lucía en el vídeo viral jugando al baloncesto</h3>
+          <p class="text-sm text-slate-400 leading-relaxed group-open:hidden">
+            Un clip filtrado muestra a Jason relajado en la casa de la playa que ya vimos en el segundo tráiler.
+          </p>
+        </div>
+        <span class="font-mono2 text-neon-pink text-xl mt-1 shrink-0 transition-transform group-open:rotate-45">＋</span>
+      </summary>
+      <div class="px-5 pb-6 text-slate-300 text-sm leading-relaxed space-y-4 border-t border-white/5 pt-4">
+        <p>La pareja protagonista de GTA 6, Jason y Lucía, vuelve a ser protagonista indiscutible de la conversación en redes tras la difusión de un breve clip filtrado que muestra a Jason relajado en la casa junto al mar que ya apareció en el segundo tráiler oficial del juego. En la secuencia, de apenas un minuto de duración, el personaje coge un balón de baloncesto y comienza a lanzar canastas frente al océano, en lo que parece una escena de tipo contemplativo alejada de la acción frenética habitual de la saga.</p>
+        <p>El vídeo, atribuido nuevamente al grupo Cyberleek, se ha compartido masivamente tanto en X como en Reddit, donde los usuarios han empezado a analizar fotograma a fotograma las animaciones del personaje, las físicas de la pelota y hasta las texturas del entorno. Muchos fans destacan que la naturalidad de los movimientos y la iluminación del atardecer apuntan a un nivel de detalle propio de una versión ya bastante avanzada del desarrollo, lo que reforzaría la teoría de que estas imágenes pertenecen a una build interna reciente y no a material antiguo de 2023.</p>
+        <p>Este clip se suma a otros fragmentos que también han circulado en los últimos días y en los que se ve a Jason al volante de un vehículo, protagonizando una persecución que termina en un choque contra una furgoneta de reparto. La comunidad interpreta que estas escenas podrían formar parte del arranque de la historia, cuando Jason y Lucía todavía no han unido fuerzas del todo, aunque todo son especulaciones hasta que Rockstar confirme oficialmente cualquier detalle argumental.</p>
+        <p>Con el lanzamiento fijado para el 19 de noviembre, cada nuevo fragmento filtrado de Jason y Lucía se convierte en munición para las teorías de los fans sobre la relación entre ambos personajes, su evolución a lo largo de la trama y el peso real que tendrán las actividades cotidianas, como el deporte, dentro de un mundo abierto que promete ser el más vivo de la saga.</p>
+      </div>
+    </details>
+
+    <details class="article group bg-night2 rounded-xl border-glow overflow-hidden">
+      <summary class="list-none cursor-pointer p-5 flex items-start justify-between gap-4">
+        <div>
+          <p class="font-mono2 text-[11px] text-neon-cyan uppercase tracking-widest mb-2">20 Ago 2026 · Evento</p>
+          <h3 class="font-display text-2xl md:text-3xl text-white mb-2 leading-tight">Rockstar confirma "An Extended Look" en Netflix el 27 de agosto</h3>
+          <p class="text-sm text-slate-400 leading-relaxed group-open:hidden">
+            El adelanto ampliado se estrenará en Netflix antes de llegar a YouTube, en medio de la ola de filtraciones.
+          </p>
+        </div>
+        <span class="font-mono2 text-neon-pink text-xl mt-1 shrink-0 transition-transform group-open:rotate-45">＋</span>
+      </summary>
+      <div class="px-5 pb-6 text-slate-300 text-sm leading-relaxed space-y-4 border-t border-white/5 pt-4">
+        <p>En medio de la tormenta generada por las últimas filtraciones de gameplay, Rockstar Games ha confirmado oficialmente que el próximo 27 de agosto se emitirá "Grand Theft Auto VI: An Extended Look", un adelanto ampliado del juego que se estrenará en exclusiva a través de Netflix antes de llegar, seis horas más tarde, al canal oficial de YouTube del estudio. El anuncio ha disparado la expectación en una comunidad que llevaba días consumiendo material no oficial de dudosa procedencia.</p>
+        <p>La elección de Netflix como plataforma de estreno ha generado un intenso debate en Reddit y X sobre las intenciones de Rockstar: para muchos usuarios se trata de una jugada estratégica destinada a captar la atención de un público más amplio, más allá del núcleo duro de jugadores, aprovechando el enorme alcance de la plataforma de streaming. Otros, en cambio, interpretan el movimiento como una respuesta directa a la reciente filtración masiva, un intento de recuperar el control narrativo antes de que las imágenes no oficiales terminen de marcar la conversación pública sobre el juego.</p>
+        <p>Este anuncio llega apenas unos días después de que circularan por redes sociales varios vídeos atribuidos al grupo Cyberleek, que aseguran haber accedido a materiales internos del desarrollo. Ese contexto ha hecho que la expectación por el evento del 27 de agosto se dispare todavía más, ya que muchos fans esperan que Rockstar aproveche la ocasión para desmentir o confirmar algunos de los detalles que llevan días circulando sin verificar, desde el sistema de combate hasta las mecánicas de conducción.</p>
+        <p>Mientras se acerca la fecha, los foros especializados y los hilos de Reddit dedicados a GTA 6 no dan tregua, analizando cada pista, cada segundo de metraje filtrado y cada declaración indirecta que pueda anticipar qué mostrará finalmente Rockstar en uno de los eventos más esperados de la historia reciente de los videojuegos.</p>
+      </div>
+    </details>
+
+    <details class="article group bg-night2 rounded-xl border-glow overflow-hidden">
+      <summary class="list-none cursor-pointer p-5 flex items-start justify-between gap-4">
+        <div>
+          <p class="font-mono2 text-[11px] text-neon-cyan uppercase tracking-widest mb-2">20 Ago 2026 · Gameplay</p>
+          <h3 class="font-display text-2xl md:text-3xl text-white mb-2 leading-tight">Medidor de combustible y polémica moneda intercambiable, filtrados</h3>
+          <p class="text-sm text-slate-400 leading-relaxed group-open:hidden">
+            La posible moneda canjeable por dinero real enciende el debate en Reddit sobre las microtransacciones.
+          </p>
+        </div>
+        <span class="font-mono2 text-neon-pink text-xl mt-1 shrink-0 transition-transform group-open:rotate-45">＋</span>
+      </summary>
+      <div class="px-5 pb-6 text-slate-300 text-sm leading-relaxed space-y-4 border-t border-white/5 pt-4">
+        <p>Entre los detalles más comentados de las últimas filtraciones de GTA 6 destaca la aparición de un supuesto medidor de combustible visible en la interfaz de los vehículos, una mecánica que, de confirmarse, añadiría una capa extra de realismo a la conducción dentro del mundo abierto más ambicioso de Rockstar Games. En los hilos de Reddit dedicados a analizar los clips filtrados, los usuarios ya debaten si esta función obligará a los jugadores a planificar sus rutas y repostar en gasolineras repartidas por todo el mapa de Leonida.</p>
+        <p>Pero si hay un rumor que ha generado auténtica controversia en la comunidad, ese es la posible existencia de una moneda virtual dentro del juego que podría intercambiarse por dinero real, en una línea similar a lo que ya sucede en el modo online de GTA V. Numerosos usuarios de X han expresado su preocupación ante la posibilidad de que Rockstar y Take-Two apuesten de forma todavía más agresiva por las microtransacciones desde el mismo lanzamiento del título, algo que consideran incompatible con el precio ya elevado que se especula para la edición estándar del juego.</p>
+        <p>Es importante señalar que ninguno de estos dos elementos, ni el medidor de combustible ni la supuesta moneda canjeable, ha sido confirmado de manera oficial por Rockstar Games. Se trata de interpretaciones que la comunidad ha extraído de los vídeos filtrados atribuidos al grupo Cyberleek, por lo que conviene tomarlos con la debida cautela hasta que el estudio se pronuncie públicamente al respecto.</p>
+        <p>En cualquier caso, ambos rumores han servido para reavivar un debate de fondo que lleva años acompañando a la saga: hasta qué punto Rockstar seguirá apostando por la monetización adicional en un título de precio ya de por sí elevado. Con el evento de Netflix del 27 de agosto a la vuelta de la esquina, muchos esperan que la compañía aclare de una vez por todas qué hay de cierto en todas estas filtraciones económicas.</p>
+      </div>
+    </details>
+
+    <details class="article group bg-night2 rounded-xl border-glow overflow-hidden">
+      <summary class="list-none cursor-pointer p-5 flex items-start justify-between gap-4">
+        <div>
+          <p class="font-mono2 text-[11px] text-neon-cyan uppercase tracking-widest mb-2">20 Ago 2026 · Gameplay</p>
+          <h3 class="font-display text-2xl md:text-3xl text-white mb-2 leading-tight">Filtrado el sistema de búsqueda de seis estrellas de GTA 6</h3>
+          <p class="text-sm text-slate-400 leading-relaxed group-open:hidden">
+            Los vídeos muestran una respuesta policial más agresiva y coordinada según sube el nivel de búsqueda.
+          </p>
+        </div>
+        <span class="font-mono2 text-neon-pink text-xl mt-1 shrink-0 transition-transform group-open:rotate-45">＋</span>
+      </summary>
+      <div class="px-5 pb-6 text-slate-300 text-sm leading-relaxed space-y-4 border-t border-white/5 pt-4">
+        <p>Uno de los grandes atractivos de cualquier entrega de Grand Theft Auto es su sistema de búsqueda policial, y GTA 6 no iba a ser la excepción. Según los últimos vídeos filtrados que circulan en Reddit y X, la saga habría recuperado el clásico nivel máximo de seis estrellas, una escala que muchos veteranos de la franquicia llevaban años reclamando tras la simplificación que trajo GTA V.</p>
+        <p>En las imágenes analizadas por la comunidad se puede apreciar una respuesta policial mucho más agresiva y coordinada a medida que aumenta el nivel de búsqueda, con la aparición de unidades especiales, bloqueos de carretera más elaborados y lo que parece ser un uso más inteligente del entorno por parte de la inteligencia artificial de los agentes. Los usuarios de Reddit ya han empezado a comparar estas secuencias con las de anteriores entregas, destacando que el comportamiento de la policía parece mucho más dinámico y realista que en GTA V.</p>
+        <p>Otro de los detalles que ha llamado la atención de los analistas aficionados es la posible inclusión de un sistema de ocultación más sofisticado, que permitiría a los jugadores cambiarse de ropa, esconder vehículos o incluso sobornar a testigos para reducir su nivel de búsqueda de forma más orgánica que el clásico método de pintar el coche en un taller. Aunque estos detalles todavía no cuentan con confirmación oficial, encajan con la filosofía de mayor realismo que Rockstar ha ido mostrando en los tráilers publicados hasta la fecha.</p>
+        <p>Con el esperado evento de Netflix del 27 de agosto cada vez más cerca, la comunidad confía en que Rockstar aproveche la ocasión para mostrar en detalle cómo funciona realmente este renovado sistema de búsqueda, uno de los aspectos que más expectación genera de cara al lanzamiento del 19 de noviembre.</p>
+      </div>
+    </details>
+
+    <details class="article group bg-night2 rounded-xl border-glow overflow-hidden">
+      <summary class="list-none cursor-pointer p-5 flex items-start justify-between gap-4">
+        <div>
+          <p class="font-mono2 text-[11px] text-neon-cyan uppercase tracking-widest mb-2">20 Ago 2026 · Actualidad</p>
+          <h3 class="font-display text-2xl md:text-3xl text-white mb-2 leading-tight">La filtración de Cyberleek hunde en bolsa a Take-Two</h3>
+          <p class="text-sm text-slate-400 leading-relaxed group-open:hidden">
+            Las acciones de la matriz de Rockstar caen tras conocerse la magnitud del leak filtrado.
+          </p>
+        </div>
+        <span class="font-mono2 text-neon-pink text-xl mt-1 shrink-0 transition-transform group-open:rotate-45">＋</span>
+      </summary>
+      <div class="px-5 pb-6 text-slate-300 text-sm leading-relaxed space-y-4 border-t border-white/5 pt-4">
+        <p>Lo que empezó como una filtración de gameplay en redes sociales terminó teniendo consecuencias muy reales en los mercados financieros. Según ha recogido la prensa económica, las acciones de Take-Two Interactive, la matriz de Rockstar Games, sufrieron una notable caída en cuestión de horas tras conocerse la magnitud de la filtración atribuida al grupo Cyberleek, con pérdidas de valor de mercado que se cuentan por miles de millones de dólares en menos de dos días.</p>
+        <p>Este episodio ha puesto de manifiesto hasta qué punto GTA 6 se ha convertido en un activo estratégico no solo para los jugadores, sino también para los inversores que siguen de cerca cada movimiento de Take-Two. En foros financieros y también en los hilos de Reddit dedicados al videojuego, se ha generado un intenso debate sobre si este tipo de filtraciones podrían llegar a condicionar decisiones empresariales, como la fecha definitiva de lanzamiento o la estrategia de marketing de cara al estreno del 19 de noviembre.</p>
+        <p>El propio grupo Cyberleek ha aprovechado la repercusión mediática de la filtración para lanzar mensajes amenazantes contra otras grandes compañías del sector, argumentando que su objetivo es protestar contra la tendencia de la industria a abandonar los formatos físicos en favor de las descargas digitales. Esta motivación, sumada al impacto bursátil generado, ha convertido el caso en uno de los episodios de filtración más comentados de los últimos años dentro del mundo de los videojuegos.</p>
+        <p>Pese a la magnitud del revuelo, los analistas coinciden en que este tipo de caídas suelen ser puntuales y que el mercado tiende a corregirse una vez se despeja la incertidumbre, especialmente si Rockstar consigue reconducir la narrativa con el evento oficial programado para el 27 de agosto en Netflix. Aun así, el episodio quedará como un recordatorio de la enorme presión mediática y financiera que rodea al lanzamiento más esperado de la historia reciente de los videojuegos.</p>
+      </div>
+    </details>
+
+    <details class="article group bg-night2 rounded-xl border-glow overflow-hidden">
+      <summary class="list-none cursor-pointer p-5 flex items-start justify-between gap-4">
+        <div>
+          <p class="font-mono2 text-[11px] text-neon-cyan uppercase tracking-widest mb-2">20 Ago 2026 · Análisis</p>
+          <h3 class="font-display text-2xl md:text-3xl text-white mb-2 leading-tight">¿Filtración real o vídeo generado con IA? La comunidad debate</h3>
+          <p class="text-sm text-slate-400 leading-relaxed group-open:hidden">
+            Usuarios de Reddit y X analizan fotograma a fotograma la autenticidad de los últimos clips filtrados.
+          </p>
+        </div>
+        <span class="font-mono2 text-neon-pink text-xl mt-1 shrink-0 transition-transform group-open:rotate-45">＋</span>
+      </summary>
+      <div class="px-5 pb-6 text-slate-300 text-sm leading-relaxed space-y-4 border-t border-white/5 pt-4">
+        <p>Con cada nueva oleada de material filtrado de GTA 6 surge la misma pregunta en Reddit y X: ¿es real o ha sido generado con inteligencia artificial? La última tanda de vídeos atribuidos al grupo Cyberleek no ha sido la excepción, y en cuestión de horas la comunidad se dividió entre quienes defendían la autenticidad de las imágenes y quienes señalaban inconsistencias visuales típicas de contenido creado o retocado digitalmente.</p>
+        <p>Varios usuarios expertos en análisis de vídeo han publicado hilos detallados en Reddit señalando artefactos extraños en las sombras, movimientos poco naturales en algunas animaciones y detalles de interfaz que no terminan de encajar con el resto del material considerado más fiable. Estos análisis han servido para poner en cuarentena parte de los clips virales, mientras que otros fragmentos, especialmente los que coinciden con localizaciones ya vistas en los tráilers oficiales, mantienen un mayor grado de credibilidad entre la comunidad.</p>
+        <p>Uno de los detalles más curiosos que ha ayudado a datar parte del material filtrado ha sido la banda sonora que suena de fondo en algunos de los clips: la identificación de una canción publicada en enero de 2025 ha llevado a varios analistas a concluir que ese fragmento en concreto pertenecería a una versión de desarrollo más reciente de lo que inicialmente se pensaba, contradiciendo teorías previas que situaban el material filtrado en 2023 o 2024.</p>
+        <p>Este fenómeno de confusión entre lo real y lo generado artificialmente se ha convertido en una constante durante los últimos meses de espera por GTA 6, obligando tanto a fans como a medios especializados a extremar la cautela antes de dar por buena cualquier filtración. Con el evento oficial de Netflix fijado para el 27 de agosto, la comunidad espera que Rockstar aporte por fin claridad sobre qué material filtrado, si es que alguno, se corresponde realmente con el juego final.</p>
+      </div>
+    </details>
+
+    <details class="article group bg-night2 rounded-xl border-glow overflow-hidden">
+      <summary class="list-none cursor-pointer p-5 flex items-start justify-between gap-4">
+        <div>
+          <p class="font-mono2 text-[11px] text-neon-cyan uppercase tracking-widest mb-2">20 Ago 2026 · Precio</p>
+          <h3 class="font-display text-2xl md:text-3xl text-white mb-2 leading-tight">Precio de GTA 6: la filtración apunta a 80 dólares</h3>
+          <p class="text-sm text-slate-400 leading-relaxed group-open:hidden">
+            La edición estándar rondaría los 80 dólares y las copias físicas serían solo un código de descarga.
+          </p>
+        </div>
+        <span class="font-mono2 text-neon-pink text-xl mt-1 shrink-0 transition-transform group-open:rotate-45">＋</span>
+      </summary>
+      <div class="px-5 pb-6 text-slate-300 text-sm leading-relaxed space-y-4 border-t border-white/5 pt-4">
+        <p>Uno de los rumores que más preocupación ha generado entre la comunidad de GTA 6 tiene que ver con su precio de salida. Según la información difundida por el grupo Cyberleek junto al resto de material filtrado, la edición estándar del juego rondaría los 80 dólares, una cifra que, de confirmarse, situaría a GTA 6 entre los videojuegos más caros jamás lanzados por una gran distribuidora y que ya ha generado un intenso debate en Reddit sobre el encarecimiento progresivo de los videojuegos AAA.</p>
+        <p>A esta polémica se suma otro dato relacionado con el formato físico del juego: según las mismas filtraciones, las copias físicas no incluirían el juego completo en el disco, sino que funcionarían principalmente como un código de descarga, una práctica cada vez más habitual en la industria pero que ha decepcionado a buena parte de los coleccionistas y jugadores que todavía valoran tener una copia física completa y funcional sin depender de una descarga adicional.</p>
+        <p>Precisamente esta cuestión del formato físico sería, según el propio grupo Cyberleek, uno de los motivos que les habría empujado a filtrar el material de gameplay, como forma de protesta contra la deriva de la industria hacia un modelo cada vez más digital. Sea cual sea la motivación real detrás de la filtración, lo cierto es que ha puesto sobre la mesa un debate que lleva tiempo latente entre los jugadores más veteranos de la saga.</p>
+        <p>Conviene recordar que, hasta la fecha, ni el precio de 80 dólares ni los detalles sobre el formato físico cuentan con confirmación oficial por parte de Rockstar Games o Take-Two Interactive. Con el evento "An Extended Look" programado para el 27 de agosto en Netflix, y el lanzamiento fijado para el 19 de noviembre de 2026, la comunidad espera que en las próximas semanas se despejen todas las dudas sobre el precio final y el contenido exacto de cada edición del juego más esperado de la década.</p>
+      </div>
+    </details>
 
   </div>
 </section>
